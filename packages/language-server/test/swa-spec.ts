@@ -37,7 +37,7 @@ describe("The SWA 'Global' Wrapper", () => {
     const orgSwaImpl = $internalGetSWAImpl();
     expect($internalGetSWAImpl()).to.equal(orgSwaImpl);
     initSwa({
-      initializationOptions: { publisher: "SAPOSS", name: "UI5-Lang-Assist" },
+      initializationOptions: { publisher: "droseger", name: "UI5-Lang-Assist" },
     });
     expect($internalGetSWAImpl()).to.not.equal(orgSwaImpl);
   });
